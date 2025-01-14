@@ -1,0 +1,43 @@
+# Structure should be as follows:
+
+# Control parameters
+
+# TITLE: Problem title
+# NNODE: Number of nodes
+# NELEM: Number of elements
+# NMAT:  Number of materials in Problem
+# NPOINT: Number of point loads in Problem
+
+# Nodal-Point data
+
+# X: coordinates of nodal points
+# U: Finite element solution at nodal points
+
+# Element data
+
+# KIND: degree of polynomial in element shape function
+# MAT:  Number of material type of element
+# NODES: Node numbers of nodes in element
+# NINT: Number of integration points used in calculations
+
+# Material data
+
+# PROP: coefficients k, c, b and f for the material
+
+# Boundary condition data
+
+# KBC: Boundary condition flag indicating type of boundary condition at each end
+# VBC: Values of boundary-condition data
+# KPOINT: Node numer of point loads
+# POINT: Value of point loads
+
+# Matrix storage
+
+# GK: Global K Matrix
+# GF: Global F vector
+
+# Numerical quadrature data
+
+# XI: Location of intergration points for rules of order 1-4
+# W: Weights for integration points for rules of order 1-4
+
