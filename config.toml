@@ -1,0 +1,24 @@
+[domain]
+length = 1.0
+elements = 50
+
+[time]
+total_time = 0.1
+time_steps = 500
+
+[pde]
+type = "heat"
+diffusivity = 0.001
+
+[basis]
+type = "linear"  # Options: linear, quadratic, etc.
+
+[initial_condition]
+type = "pulse"
+start_fraction = 0.4
+end_fraction = 0.6
+value = 1.0
+
+[boundary_conditions]
+type = "dirichlet"  # Options: dirichlet, neumann, periodic
+value = [0.0, 0.0]  # Dirichlet values at boundaries
